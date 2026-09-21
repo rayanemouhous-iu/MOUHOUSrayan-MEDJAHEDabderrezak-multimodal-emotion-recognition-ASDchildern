@@ -1,0 +1,32 @@
+seed: 42
+data:
+  seq_len: 40
+  video_dim: 1280
+  audio_dim: 25
+model:
+  d_model: 192
+  d_state: 32
+  d_conv: 4
+  expand: 2
+  classifier_hidden: 128
+  dropout: 0.20
+  num_classes: 8
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.0001
+  weight_decay: 0.001
+  grad_clip: 1.0
+labels:
+  0: Neutre
+  1: Calme
+  2: Heureux
+  3: Triste
+  4: Colère
+  5: Peur
+  6: Dégoût
+  7: Surprise
+ssbd_labels:
+  0: Excitation positive
+  1: Détresse négative
+  2: Auto-régulation apaisante
